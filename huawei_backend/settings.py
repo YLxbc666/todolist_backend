@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'huawei_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
+        'NAME': 'todoDB',  # 数据库名称
+        'HOST': 'localhost',  # 数据库地址，本机 ip 地址 127.0.0.1
+        'PORT': 3306,  # 端口
+        'USER': 'root',  # 数据库用户名
+        'PASSWORD': 'Qq20030722',  # 数据库密码
     }
 }
 
